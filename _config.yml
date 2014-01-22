@@ -1,57 +1,9 @@
-title:            Co-op@Home
-tagline:          Home grown web development.
-description:      Making and curated websites with care in southern Manitoba.
-#Comment out url when working locally to resolve base urls correctly
-#url: http://jekyll.gtat.me
+name: Co-op@Home Internal
+url: http://int.sdigital.ca
+description: Co-op@Home Internal Issue Site
 
-# Owner/author information
-owner:
-  name:           Josiah Wiebe
-  avatar:         avatar.png
-  bio:            "Just a guy."
-  email:          josiahw@winklercoop.com
-  twitter:        josiahwiebe
-  github:         josiahwiebe       
-  instagram:      josiahwiebe    
-  dribbble:       josiahwiebe
-  #disqus:         balzac
-  # Plug in your disqus shortname!
-  
+permalink: /:year/:month/:day/:title/
+paginate: 10
+pygments: true
 
-# Links to include in top navigation
-# For external links add external: true
-links:
-  - title: About
-    url: /about
-  - title: Github
-    url: https://github.com/ColeTownsend/Balzac-for-Jekyll
-    external: true
-  - title: Store Website ->
-    url: http://coopathome.ca
-    external: true
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/Winnipeg
-future:      true
-pygments:    true
-markdown:    kramdown
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
-
-  coderay:
-    coderay_line_numbers: 
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp"]
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
